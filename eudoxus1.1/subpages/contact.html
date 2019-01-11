@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="gr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Επικοινωνία</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <header>
+      <div class="about_bar">
+        <ul><!---id="about_bar"-->
+          <li><a href="help.html">Βοήθεια</a></li>
+          <li class="inside"><a href="contact.html">Επικοινωνία</a></li>
+          <li><a href="about.html">Σχετικά με τον Εύδοξο</a></li>
+          <li><a href="connect.html">Σύνδεση</a></li>
+        </ul>
+      </div>
+      <div class="below_about">
+        <a href="..\index.php"><img class="logo"src="..\images\logo.png" alt=" Εύδοξος logo"></a>
+        <nav>
+          <ul>
+            <li><a href="student.html">Φοιτητές</a></li>
+            <li><a href="publisher.html">Εκδότες</a></li>
+            <li><a href="secret.html">Γραμματείες Τμημάτων</a></li>
+            <li><a href="#">Διαθέτες Δωρεάν Ηλετρονικών <br>Βοηθημάτων και Σημειώσεων</a></li>
+            <li><a href="#">Βιβλιοθήκες</a></li>
+            <li><a href="#">Σημεία Διανομής</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="main_container">
+        <div class="path">
+          <ul>
+            <li><a href="../index.html">Αρχική</a> > </li>
+            <li><a href="contact.html">Επικοινωνία</a></li>
+          </ul>
+        </div>
+        <h2>Επικοινωνηστε μαζι μας</h2>
+        <p>Με το Γραφείο Αρωγής Χρηστών μπορείτε να επικοινωνήσετε τηλεφωνικά στο 215 215 7850 είτε συμπληρώνοντας την παρακάτω φόρμα.</p>
+          <table id="contact_form">
+            <tbody>
+              <tr>
+              <td>Ονοματεπώνυμο:</td>
+              <td><input type="text" name="txtFrom" id="FromName" size="20" maxlength="250"></td>
+              </tr>
+              <tr>
+              <td>Τηλέφωνο Επικοινωνίας:</td>
+              <td><input type="text" name="phone" id="PhoneNum" size="20" maxlength="250"></td>
+              </tr>
+              <tr>
+              <td>Πληκτρολογήστε την ηλεκτρονική σας διεύθυνση:</td>
+              <td><input type="text" name="txtFrom" id="emailFrom" size="20" maxlength="250"></td>
+            </tr>
+            <tr>
+            <td>Κατηγορία Χρήστη:</td>
+            <td><select class="UserCategory" name="">
+              <option value="Student">Φοιτητής</option>
+              <option value="Secret">Γραμματεία Τμήματος</option>
+              <option value="Publisher">Εκδοτικός Οίκος</option>
+            </select>
+            </tr>
+            <tr>
+              <td>Το μήνυμα σας:</td>
+              <td><textarea name="txtBody" id="emailBody" cols="50" rows="10"></textarea></td>
+            </tr></tbody>
+        </table>
+        <input class="submit_contact" type="submit" value="Αποστολή">
+      </div>
+    </main>
+    <footer>
+      <h6>Με τη συγχρηματοδότηση της Ελλάδας & της Ευρωπαϊκής Ένωσης</h6>
+      <img src="../images/espa_1.jpg" alt="ΕΣΠΑ">
+      <img src="../images/minedu2.jpg" alt="Υπουργείο Παιδείας Έρευνας και Θρησκευμάτων">
+    </footer>
+    </body>
+</html>

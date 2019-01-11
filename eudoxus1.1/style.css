@@ -1,0 +1,529 @@
+/* Reseting stylesheet */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+}
+
+body {
+ line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+ display:block;
+}
+
+nav ul {
+ list-style:none;
+}
+
+blockquote, q {
+ quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content:'';
+ content:none;
+}
+
+a {
+ margin:0;
+ padding:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+ background-color:#ff9;
+ color:#000;
+ text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+ background-color:#ff9;
+ color:#000;
+ font-style:italic;
+ font-weight:bold;
+}
+
+del {
+ text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+ border-bottom:1px dotted;
+ cursor:help;
+}
+
+table {
+ border-collapse:collapse;
+ border-spacing:0;
+}
+
+hr {
+ display:block;
+ height:1px;
+ border:0;
+ border-top:1px solid #cccccc;
+ margin:1em 0;
+ padding:0;
+}
+
+input, select {
+ vertical-align:middle;
+}
+
+/* My code starts here */
+/* https://color.adobe.com/create/color-wheel/ I have it here to search for colors if I want to */
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+header{
+  width: 100%;
+  height: 200px;
+  background-color: rgba(240,211,255,0.25);
+  align-content: row;
+}
+
+
+.about_bar{
+  position: fixed;
+  width: 100%;
+  height: 20px;
+  align-content: right;
+}
+.about_bar ul{
+  position: absolute;
+  right: 0;
+  float: left;
+  align-items: flex-end;
+  margin-top: 0;
+  margin-right: 0;
+  width: auto;
+  background-color: transparent;
+  overflow: visible;
+}
+
+.about_bar li:hover > ul {
+  display: block;
+}
+.about_bar ul li{
+  display: inline;
+  list-style: none;
+  padding: 2px 4px 2px 4px;
+  float:right;
+  line-height: 20px;
+  padding-left: 5px;
+  border: 2px solid #fff;
+  background-color: grey;
+}
+.about_bar ul ul {
+  margin-top: 2px;
+  display: none;
+  position: static;
+  height: auto;
+  width: 180px;
+  background: transparent;
+}
+
+.about_bar ul ul li {
+  width: inherit;
+  text-align: center;
+}
+ .about_bar ul li a{
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-weight: 200;
+  color: #fff;
+}
+.about_bar .inside{
+  background-color: #fff;
+}
+.about_bar .inside a{
+  color: black;
+}
+header .below_about{
+  margin-top: 0;
+  padding: 0;
+  width: fit-content;
+  align-content: inline;
+}
+.logo{
+  height: calc(100%-120px);
+  margin: 20px 0 40px 40px;
+  position: relative;
+  width: 160px;
+  background-color: #fff;
+  background-size: cover;
+  border: solid;
+  border-radius: 20px;
+  border-width: 5px;;
+  border-color: rgb(255,151,125);
+}
+.below_about nav{
+  margin-top: 0;
+  margin-left: 0;
+  width: calc(100% - 240px);
+  float: right;
+}
+.below_about nav ul{
+  width: 100%;
+  height: 100px;
+}
+.below_about nav ul li{
+  list-style: none;
+  height: 100px;
+  display: inline-block;
+  float: left;
+}
+.below_about nav ul li a{
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-weight: bold;
+  color: purple;
+  padding: 0 10px;
+  margin-top: 100px;
+  line-height: 30px;
+}
+.below_about nav ul li a:hover{
+  color: white;
+  font-size: 22px;
+  text-shadow: 2px 2px 4px #F71C16;
+}
+
+.below_about .current{
+  font-style: italic;
+  text-shadow: 4px 4px 4px blue;
+}
+
+.below_about .current a{
+  color: white;
+  font-size: 28px;
+}
+/* MAIN */
+main{
+  width:100%;
+  height: 100%;
+
+}
+
+.news_box{
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 150px;
+  width: 210px;
+  height: stretch;
+  position: absolute;
+  background-color: #fff;
+  border: solid;
+  border-radius: 20px;
+  border-width: 5px;;
+  border-color: rgb(255,151,125);
+}
+
+.news_box h3{
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: purple;
+  text-align: center;
+}
+.news_box h3 a{
+  text-decoration: none;
+}
+.news_box ul li{
+  list-style: none;
+  margin: 10px 10px 0 10px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: purple;
+  text-align: center;
+}
+.news_box ul li a{
+  text-decoration: none;
+}
+.news_box img{
+  margin: 15px 15px;
+  align-self: flex-end;
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(255,151,125);
+}
+.main_container{
+  margin: 0 0 150px 240px;
+  height: stretch;
+  width: 1270px;
+  position: absolute;
+  background-color: rgba(204,255,252,0.3);
+  border: solid;
+  border-radius: 20px;
+  border-width: 5px;;
+  border-color: rgb(255,151,125);
+}
+main .path{
+  margin-top: 10px;
+  margin-left: 20px;
+  position: relative;
+  width: 100%;
+}
+main .path ul li{
+  display: inline;
+}
+main .path ul li a{
+  text-decoration: none;
+}
+.search_database h3{
+  margin-top: 20px;
+  margin-left: 20px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(178, 106 ,87);
+}
+.search_database form{
+  margin-left: 20px;
+  width: 75%;
+  padding-bottom: 30px;
+  padding-top: 8px;
+}
+.search_database form input{
+  border: solid;
+  border-width: 1px;
+  border-radius: 8px;
+  height: 30px;
+}
+.search_database form select{
+  width: 438px;
+  border: solid;
+  border-width: 1px;
+  border-radius: 8px;
+  height: 30px;
+}
+.submit {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+  background-color: rgb(97,171,135);
+  width:100px;
+}
+
+.submit:hover{
+  background-color: #fff;
+  color: black;
+}
+.about_nav{
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 150px;
+  width: 210px;
+  height: stretch;
+  position: absolute;
+  background-color: #fff;
+  border: solid;
+  border-right: none;
+  border-radius: 20px;
+  border-width: 5px;;
+  border-color: rgb(255,151,125);
+}
+
+.about_nav ul li{
+  list-style: none;
+  margin: 10px 10px 0 10px;
+  height: stretch;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: purple;
+  text-align: center;
+}
+.current a{
+  font-size: 18px;
+  color: blue;
+}
+.about_nav ul li a{
+  text-decoration: none;
+}
+
+.about_container{
+  margin: 0 0 130px 225px;
+  height: stretch;
+  width: 1270px;
+  position: absolute;
+  background-color: rgba(204,255,252,0.3);
+  border: solid;
+  border-left: none;
+  border-radius: 20px;
+  border-width: 5px;;
+  border-color: rgb(255,151,125);
+}
+
+main h2{
+  text-transform:uppercase;
+  font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 10px;
+}
+main p{
+  font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+#contact_form{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 10px;
+  width: 500px;
+}
+
+#contact_form tr{
+  margin-top: 20px;
+  display: row;
+  width: 400px;
+}
+
+#contact_form tr td{
+  padding-right: 10px;
+  padding-top: 10px;
+  display: run-in;
+  font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 15px;
+  width: stretch;
+}
+
+.submit_contact{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 440px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+  background-color: rgb(97,171,135);
+  width:100px;
+}
+.submit_contact:hover{
+  background-color: #fff;
+  color: black;
+}
+
+.connect_container{
+  margin: 0 0 150px 240px;
+  height: stretch;
+  width: 1270px;
+  position: absolute;
+  background-color: rgba(204,255,252,0.3);
+  border: solid;
+  border-radius: 20px;
+  border-width: 5px;;
+  border-color: rgb(255,151,125);
+}
+
+.connect_container p{
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.connect_container table tr{
+  margin-top: 20px;
+  padding-left: 20px;
+  display: row;
+  width: 400px;
+}
+
+.connect_container table tr td{
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+  display: run-in;
+  font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 15px;
+  width: stretch;
+}
+.note{
+  font-size: 12px;
+}
+.connect_container .submit{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 235px;
+  text-align: center;
+  font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 15px;
+}
+input:focus {
+	background-color:#c4c4c4;
+}
+.required{
+  color: red;
+}
+.about_container form p{
+  margin-left: 20px;
+  padding-top: 20px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+footer{
+  position: fixed;
+  margin-bottom: 0;
+  bottom: 0;
+  width:100%;
+  height: 100px;
+  border-top-style: solid;
+  border-width: thin;
+  border-color: rgb(255,151,125);
+  background-color: #fff;
+}
+
+footer h6{
+  margin-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+footer img{
+  padding-left: 20px;
+  align-items: center;
+}

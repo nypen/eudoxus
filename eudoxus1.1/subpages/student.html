@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="gr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Εύδοξος - Εφαρμογή Φοιτητών</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <header>
+      <div class="about_bar">
+        <ul><!---id="about_bar"-->
+          <li><a href="help.html">Βοήθεια</a></li>
+          <li><a href="contact.html">Επικοινωνία</a></li>
+          <li><a href="about.html">Σχετικά με τον Εύδοξο</a></li>
+          <li><a href="edit_account.php">Προφίλ Χρήστη</a>
+            <ul>
+              <li>Επεξεργασία Στοιχείων</li>
+              <li>Αποσύνδεση</li>
+            </ul>
+          </li> <!-- Εστω ότι έχει συνδεθεί. Δεν ξέρω ακόμα πως να το κανω να αλλαζει με php ανάλογα με το αν έχει γινει συνδεση ή οχι -->
+        </ul>
+      </div>
+      <div class="below_about">
+        <a href="..\index.php"><img class="logo"src="..\images\logo.png" alt=" Εύδοξος logo"></a>
+        <nav>
+          <ul>
+            <li class="current"><a href="student.html">Φοιτητές</a></li>
+            <li><a href="publisher.html">Εκδότες</a></li>
+            <li><a href="secret.html">Γραμματείες Τμημάτων</a></li>
+            <li><a href="#">Διαθέτες Δωρεάν Ηλετρονικών <br>Βοηθημάτων και Σημειώσεων</a></li>
+            <li><a href="#">Βιβλιοθήκες</a></li>
+            <li><a href="#">Σημεία Διανομής</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+
+      <div class="about_nav">
+        <ul>
+          <li class="current"><a href="#" >Δήλωση Συγγραμμάτων</a></li>
+          <li><a href="#">Ανταλλαγή Συγγραμμάτων</a></li>
+          <li><a href="#">Αρχείο Δηλώσεων</a></li>
+        </ul>
+      </div>
+      <div class="about_container">
+        <div class="path">
+          <ul>
+            <li><a href="../index.php">Αρχική</a> > </li>
+            <li><a href="student.html">Φοιτητές</a> > </li>
+            <li>Δήλωση Συγγραμμάτων</li>
+          </ul>
+        </div>
+        <form action="bookdeclaration" method="post">
+          <p>Τρέχον Εξάμηνο: <script type="text/JavaScript">
+          var date = new Date();
+          var month = date.getMonth();
+
+          if ((month > 9) || (month < 2)) {
+            document.write('Χειμερινό Εξάμηνο');
+            }
+          else {
+            document.write('Εαρινό Εξάμηνο');
+            }
+          </script></p>
+          <table>
+            <tbody>
+
+            </tbody></table>
+      <form>
+      </div>
+      </main>
+    <footer>
+      <h6>Με τη συγχρηματοδότηση της Ελλάδας & της Ευρωπαϊκής Ένωσης</h6>
+      <img src="../images/espa_1.jpg" alt="ΕΣΠΑ">
+      <img src="../images/minedu2.jpg" alt="Υπουργείο Παιδείας Έρευνας και Θρησκευμάτων">
+    </footer>
+    </body>
+</html>
