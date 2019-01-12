@@ -21,6 +21,7 @@ time, mark, audio, video {
 }
 
 body {
+ position: absolute;
  line-height:1;
 }
 
@@ -506,12 +507,41 @@ input:focus {
   font-weight: bold;
   font-size: 18px;
 }
+
+table, th, td {
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+table#t01 {
+  width: 100%;
+  background-color: #9bf2da;
+  color: black;
+}
+table#t01 th {
+  background-color: grey;
+  color: white;
+}
+
+table#t02 {
+  width: 50%;
+  background-color: #9bf2da;
+  color: black;
+}
+table#t02 th {
+  background-color: grey;
+  color: white;
+}
+
 footer{
   position: fixed;
   margin-bottom: 0;
   bottom: 0;
   width:100%;
-  height: 100px;
+  height: 135px;
   border-top-style: solid;
   border-width: thin;
   border-color: rgb(255,151,125);
