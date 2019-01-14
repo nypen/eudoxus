@@ -131,9 +131,7 @@ header{
   overflow: visible;
 }
 
-.about_bar li:hover > ul {
-  display: block;
-}
+
 .about_bar ul li{
   display: inline;
   list-style: none;
@@ -151,6 +149,13 @@ header{
   height: auto;
   width: 180px;
   background: transparent;
+}
+.about_bar li:hover > ul {
+  text-decoration: underline;
+  display: block;
+  position: relative;
+  z-index: 100%;
+
 }
 
 .about_bar ul ul li {
@@ -750,6 +755,119 @@ input:focus {
   font-size: 15px;
   color: #E80C7C;
 }
+
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+table#t01 {
+  width: 100%;
+  background-color: #9bf2da;
+  color: black;
+}
+table#t01 th {
+  background-color: grey;
+  color: white;
+}
+
+table#t02 {
+  width: 50%;
+  background-color: #9bf2da;
+  color: black;
+}
+table#t02 th {
+  background-color: grey;
+  color: white;
+}
+
+table#t03 {
+  width: 50%;
+  background-color: #9bf2da;
+  color: black;
+}
+
+table#t03 th {
+
+  background-color: grey;
+  color: white;
+}
+
+div.txt_indent_a {
+  text-indent: 10%;
+}
+div.txt_indent_b {
+  text-indent: 5%;
+}
+
+div.secret_descrip {
+  text-align: center;
+}
+
+div.txt_underline {
+  text-decoration: underline;
+}
+
+.button_delete {
+  background-color: #f44336; /* Green */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 13px 25px;;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.button_delete:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button_return {
+  background-color: #FE702E; /* Green */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 13px 25px;;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.button_return:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button_proceed {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 13px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.button_proceed:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+main h5{
+  text-transform:uppercase;
+  font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
 
 body footer{
   bottom: 0;

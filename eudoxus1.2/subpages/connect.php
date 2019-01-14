@@ -6,8 +6,8 @@
       <div class="connect_container">
         <div class="path">
           <ul>
-            <li><a href="../index.html">Αρχική</a> > </li>
-            <li><a href="connect.html">Σύνδεση</a></li>
+            <li><a href="../index.php">Αρχική</a> > </li>
+            <li><a href="connect.php">Σύνδεση</a></li>
           </ul>
         </div>
         <p>Παρακαλώ συπληρώστε τα στοιχεία σας.</p>
